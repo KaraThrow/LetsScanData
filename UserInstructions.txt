@@ -1,0 +1,32 @@
+User Instructions-
+Things to note: I did not make a website (sorry)
+
+--- Step 1 (optional) ---
+Run JSONtoCSV.py to extract the information from
+yelp_academic_dataset_business.json and
+yelp_academic_dataset_review.json
+
+This takes forever and there might be some errors
+(I think I had to change 1 or 2 entries)
+so the alternative is to just use the review.csv 
+and business.csv that are provided
+
+
+--- Step 2 (optional) ---
+Run sample.py to generate sample.csv, which contains
+a randomly generated list of business ID's which
+are used as the training data. Changing the value of
+'samplefraction' variable will increase or decrease the 
+sample size. 
+
+You also have the option of just using the sample.csv provided
+
+
+--- Step 3 ---
+First, run Main.py.
+After it finishes running you can input some function calls to make it do stuff.
+train() - this functions uses the training data to build a simple decision tree.
+		  After calling this function, all classifications will be attempted with the tree. 
+testsample() - this attempts to classify all the training data
+testdata(x) - this attempts to classify the first x businesses in the business hashtable
+bidquery(bid) - this attempts to classify the business that corresponds to the business id
